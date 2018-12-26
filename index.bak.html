@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container-fluid wrap">
+            <div class="page-header">
+                <h1>站点主要用来展示分享的demo，基于webpack vue2.0及vue-router2.0来构建</h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-2 col-md-2">
+                    <div class="panel panel-info">
+                         <ul class="list-group">
+                            <li class="list-group-item nav-tit">html5 相关</li>
+                            <router-link :to={name:'html5-meta'} tag="li" class="list-group-item">html5-meta</router-link>
+                            <router-link :to={name:'html5-video-audio'} tag="li" class="list-group-item">html5-video-audio</router-link>
+                            <router-link :to={name:'html5-地理定位'} tag="li" class="list-group-item">html5-地理定位</router-link>
+                            <li class="list-group-item"><a href="./src/component/html5-applicationCache.html" target="_blank">html5-应用程序缓存</a></li>
+                            <!-- <router-link :to={name:'html5-web-works'} tag="li" class="list-group-item">html-web works</router-link> -->
+                            <li class="list-group-item"><a href="http://www.w3school.com.cn/html5/html_5_webworkers.asp" target="_blank">html5-web works</a></li>
+                            <router-link :to={name:'html5-websocket'} tag="li" class="list-group-item">html5-websocket</router-link>
+
+                            <li class="list-group-item nav-tit">css3 相关</li>
+                            <router-link :to={name:'css3-border-radius'} tag="li" class="list-group-item">border-radius</router-link>
+                            <router-link :to={name:'css3-selector-checked'} tag="li" class="list-group-item">css3-selector-checked</router-link>
+                            <!-- 与router中的#冲突，先连接到html版 -->
+                            <!-- <router-link :to={name:'css3-selector-target'} tag="li" class="list-group-item">css3-selector-target</router-link> -->
+                            <li class="list-group-item"><a href="./src/component/css3-selector-target.html" target="_blank">css3-selector-target</a></li>
+                            <router-link :to={name:'css3-aninimal-steps()'} tag="li" class="list-group-item">css3-aninimal-steps()</router-link>
+                            <router-link :to={name:'css3-calc()'} tag="li" class="list-group-item">css3-calc()</router-link>
+                            <router-link :to={name:'尖角'} tag="li" class="list-group-item">css3实现尖角</router-link>
+                            <router-link :to={name:'css3动画背景渐变'} tag="li" class="list-group-item">css3动画背景渐变</router-link>
+                            <router-link :to={name:'css3-易忽略的属性'} tag="li" class="list-group-item">css3-易忽略的属性</router-link>
+
+                            <li class="list-group-item nav-tit">响应式设计-布局</li>
+                            <router-link :to={name:'流式布局'} tag="li" class="list-group-item">流式布局</router-link>
+                            <router-link :to={name:'弹性布局(新老对比)'} tag="li" class="list-group-item">弹性布局(新老对比)</router-link>
+                            <router-link :to={name:'弹性布局(旧)-box-align'} tag="li" class="list-group-item">弹性布局(旧)-box-align</router-link>
+                            <router-link :to={name:'弹性布局(旧)-pack'} tag="li" class="list-group-item">弹性布局(旧)-pack</router-link>
+                            <router-link :to={name:'弹性布局-flex'} tag="li" class="list-group-item">弹性布局-flex</router-link>
+                            <router-link :to={name:'弹性布局-order'} tag="li" class="list-group-item">弹性布局-order</router-link>
+                            <router-link :to={name:'多列布局'} tag="li" class="list-group-item">多列布局</router-link>
+                            <router-link :to={name:'表格布局'} tag="li" class="list-group-item">表格布局</router-link>
+                            <router-link :to={name:'网格布局'} tag="li" class="list-group-item">网格布局</router-link>
+
+                            <li class="list-group-item nav-tit">开发与调试</li>
+                            <router-link :to={name:'webpack服务器小结'} tag="li" class="list-group-item">webpack服务器小结</router-link>
+                            <router-link :to={name:'ftl-node服务器'} tag="li" class="list-group-item">ftl-node服务器</router-link>
+                            <router-link :to={name:'weinre服务器使用'} tag="li" class="list-group-item">weinre服务器使用</router-link>
+                            <router-link :to={name:'Browsersync多端远程调试'} tag="li" class="list-group-item">Browsersync多端远程调试</router-link>
+
+                            <!-- <li class="list-group-item nav-tit">react学习</li> -->
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-10 col-md-10 m-right">
+                    <!-- 路由出口 -->
+                    <!-- 路由匹配到的组件将渲染在这里 -->
+                    <router-view></router-view>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

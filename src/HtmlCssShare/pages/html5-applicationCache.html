@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html manifest="http://www.w3school.com.cn/example/html5/demo_html.appcache">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<script type="text/javascript" src="http://www.w3school.com.cn/example/html5/demo_time.js">
+</script>
+<pre>
+什么是应用程序缓存（Application Cache）？
+	HTML5 引入了应用程序缓存，这意味着 web 应用可进行缓存，并可在没有因特网连接时进行访问。
+	
+
+	应用程序缓存为应用带来三个优势：
+	离线浏览 - 用户可在应用离线时使用它们
+	速度 - 已缓存资源加载得更快
+	减少服务器负载 - 浏览器将只从服务器下载更新过或更改过的资源。
+
+如需启用应用程序缓存，请在文档的 <html> 标签中包含 manifest 属性：
+
+< html manifest="demo.appcache" >
+
+每个指定了 manifest 的页面在用户对其访问时都会被缓存。如果未指定 manifest 属性，则页面不会被缓存（除非在 manifest 文件中直接指定了该页面）。
+
+
+manifest 文件的建议的文件扩展名是：".appcache"。
+请注意，manifest 文件需要配置正确的 MIME-type，即 "text/cache-manifest"。必须在 web 服务器上进行配置。
+
+
+更新缓存
+一旦应用被缓存，它就会保持缓存直到发生下列情况：
+用户清空浏览器缓存
+manifest 文件被修改（参阅下面的提示）
+由程序来更新应用缓存
+
+
+具体参考：http://www.w3school.com.cn/html5/html_5_app_cache.asp
+
+</pre>
+<p id="timePara"><button onclick="getDateTime()">获得日期和事件</button></p>
+<p><img src="http://www.w3school.com.cn//i/w3school_banner.gif" /></p>
+<p>请打开<a href="http://www.w3school.com.cn//example/html5/html5_html_manifest.html" target="_blank">这个页面</a>，然后脱机浏览，重新加载页面。页面中的脚本和图像依然可用。</p>
+</body>
+</html>
