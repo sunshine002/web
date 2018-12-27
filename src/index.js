@@ -24,10 +24,6 @@ import Frame from './Frame.vue';
  */
 // 路由配置
 import router from './router.js';
-// import HtmlCssShareRooter from './HtmlCssShare/rooter.js';
-
-// github pages的的web端demo的router的url中带有web-share
-// let isWeb = window.location.pathname.indexOf('demo1') !== -1;
 
 let data = {
   a: 1,

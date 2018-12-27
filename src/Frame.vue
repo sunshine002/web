@@ -4,12 +4,6 @@
     <div class="header">
       <div class="headerInfo">
         <div class="tagWrap">
-          <!--
-            之所以不用 / ，原因是因为编译后的文件要放在Github Pages中，如果为 /，
-            则地址会是https://sunshine002.github.io，而不是https://sunshine002.github.io/web-share
-           -->
-          <!-- <span><a href='/'>Vue-Demo</a></span> -->
-          <!-- <span><a href='/demo1'>html5,css3,布局-Demo</a></span> -->
           <span><router-link :to="{name:'index'}" tag="a">Vue-Demo</router-link></span>
           <span><router-link :to="{name:'demo1'}" tag="a">html5-meta</router-link></span>
         </div>
@@ -18,8 +12,6 @@
     </div>
     <div class="app-content">
       <router-view></router-view>
-      <!-- <html-css-share v-if='isWeb'></html-css-share>
-      <vue-share v-else></vue-share> -->
     </div>
   </div>
 </template>

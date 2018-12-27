@@ -1,7 +1,4 @@
 
-// 引入 vue-router 组件：
-// import VueRouter from 'vue-router';
-
 /**
  * 模块相关的组件
  */
@@ -81,48 +78,3 @@ export default [
   { path: '/web-dev-browsersync', name: 'Browsersync多端远程调试', component: devBrowsersync },
   { path: '*', name: 'error', component: error }
 ];
-
-// const router = new VueRouter({
-//   mode: 'history',
-//   linkActiveClass: 'active',
-//   // 路由的基路径
-//   base: '/demo1',
-//   routes: [
-//     { path: '/', name: 'index', component: index },
-//     { path: '/web-fluid', name: '流式布局', component: fluid },
-//     { path: '/web-flex-old-new', name: '弹性布局(新老对比)', component: flexOldNew },
-//     { path: '/web-oldflex-box-align', name: '弹性布局(旧)-box-align', component: oldflexBoxAlign },
-//     { path: '/web-oldflex-box-pack', name: '弹性布局(旧)-pack', component: oldflexBoxPack },
-
-//     { path: '/web-newflex-flex', name: '弹性布局-flex', component: flexLayOut },
-//     { path: '/web-newflex-order', name: '弹性布局-order', component: flexOrder },
-
-//     { path: '/web-columns', name: '多列布局', component: columns },
-//     { path: '/web-grid', name: '网格布局', component: grid },
-
-//     { path: '/web-table', name: '表格布局', component: table },
-
-//     { path: '/web-css3-border-radius', name: 'css3-border-radius', component: css3BorderRadius },
-//     { path: '/web-css3-selector-checked', name: 'css3-selector-checked', component: css3SelectorChecked },
-//     { path: '/web-css3-selector-target', name: 'css3-selector-target', component: css3SelectorTarget },
-//     { path: '/web-css3-aninimal-steps', name: 'css3-aninimal-steps()', component: css3AninimalSteps },
-//     { path: '/web-css3-calc', name: 'css3-calc()', component: css3Calc },
-//     { path: '/web-jianjiao', name: '尖角', component: jianjiao },
-//     { path: '/web-css3-animal-gradient', name: 'css3动画背景渐变', component: css3AnimalGradient },
-//     { path: '/web-css3-add', name: 'css3-易忽略的属性', component: css3Add },
-
-//     { path: '/web-html5-meta', name: 'html5-meta', component: html5Meta },
-//     { path: '/web-html5-video-audio', name: 'html5-video-audio', component: html5VideoAudio },
-//     { path: '/web-html5-location', name: 'html5-地理定位', component: html5Location },
-//     { path: '/web-html5-web-works', name: 'html5-web-works', component: html5WebWorks },
-//     { path: '/web-html5-websocket', name: 'html5-websocket', component: html5Websocket },
-
-//     { path: '/web-webpack-info', name: 'webpack服务器小结', component: webpackInfo },
-//     { path: '/web-dev-ftl-node', name: 'ftl-node服务器', component: devFtlNode },
-//     { path: '/web-dev-weinre', name: 'weinre服务器使用', component: devWeinre },
-//     { path: '/web-dev-browsersync', name: 'Browsersync多端远程调试', component: devBrowsersync },
-//     { path: '*', name: 'error', component: error }
-//   ]
-// });
-
-// export default router;

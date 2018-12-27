@@ -1,7 +1,4 @@
 
-// 引入 vue-router 组件：
-import VueRouter from 'vue-router';
-
 /**
  * 模块相关的组件
  */
