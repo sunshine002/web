@@ -58,7 +58,7 @@
         "webpack-dev-server": "^2.9.1"
     },
     "scripts": {
-        "start": "webpack-dev-server --hot --inline --progress --colors --history-api-fallback --open-page 'web-share'",
+        "start": "webpack-dev-server --hot --inline --progress --colors --history-api-fallback",
         "build": "rm -rf ./docs && webpack --watch"
     }
 }

@@ -16,7 +16,7 @@ import error from '../error.vue';
 const router = new VueRouter({
   mode: 'history',
   linkActiveClass: 'active',
-  base: '/web-share/',
+  // base: '/web-share/',
   routes: [
     { path: '/', name: 'index', component: index },
     { path: '/0', name: 'Vue起步', component: Vm0 },

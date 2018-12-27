@@ -33437,11 +33437,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "tagWrap"
   }, [_c('span', [_c('a', {
     attrs: {
-      "href": "/web-share"
+      "href": "/"
     }
   }, [_vm._v("Vue-Demo")])]), _c('span', [_c('a', {
     attrs: {
-      "href": "/web-share/demo1"
+      "href": "/demo1"
     }
   }, [_vm._v("html5,css3,布局-Demo")])])]), _c('div', {
     staticClass: "tip"
@@ -33501,7 +33501,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var router = new _vueRouter2.default({
   mode: 'history',
   linkActiveClass: 'active',
-  base: '/web-share/',
+  // base: '/web-share/',
   routes: [{ path: '/', name: 'index', component: _index2.default }, { path: '/0', name: 'Vue起步', component: _vm2.default }, { path: '/1-1', name: '实例-数据', component: _vm4.default }, { path: '/1-2', name: 'DOM', component: _vm6.default }, { path: '/1-3', name: '临界情况', component: _vm8.default }, { path: '/1-33', name: '特性', component: _vm10.default }, { path: '*', name: 'error', component: _error2.default }]
 });
 
@@ -34657,7 +34657,7 @@ var router = new _vueRouter2.default({
   mode: 'history',
   linkActiveClass: 'active',
   // 路由的基路径
-  base: '/web-share/demo1',
+  base: '/demo1',
   routes: [{ path: '/', name: 'index', component: _index2.default }, { path: '/web-fluid', name: '流式布局', component: _fluid2.default }, { path: '/web-flex-old-new', name: '弹性布局(新老对比)', component: _flexOldNew2.default }, { path: '/web-oldflex-box-align', name: '弹性布局(旧)-box-align', component: _oldflexBoxAlign2.default }, { path: '/web-oldflex-box-pack', name: '弹性布局(旧)-pack', component: _oldflexBoxPack2.default }, { path: '/web-newflex-flex', name: '弹性布局-flex', component: _newflexFlex2.default }, { path: '/web-newflex-order', name: '弹性布局-order', component: _newflexOrder2.default }, { path: '/web-columns', name: '多列布局', component: _columns2.default }, { path: '/web-grid', name: '网格布局', component: _grid2.default }, { path: '/web-table', name: '表格布局', component: _table2.default }, { path: '/web-css3-border-radius', name: 'css3-border-radius', component: _css3BorderRadius2.default }, { path: '/web-css3-selector-checked', name: 'css3-selector-checked', component: _css3SelectorChecked2.default }, { path: '/web-css3-selector-target', name: 'css3-selector-target', component: _css3SelectorTarget2.default }, { path: '/web-css3-aninimal-steps', name: 'css3-aninimal-steps()', component: _css3AninimalSteps2.default }, { path: '/web-css3-calc', name: 'css3-calc()', component: _css3Calc2.default }, { path: '/web-jianjiao', name: '尖角', component: _jianjiao2.default }, { path: '/web-css3-animal-gradient', name: 'css3动画背景渐变', component: _css3AnimalGradient2.default }, { path: '/web-css3-add', name: 'css3-易忽略的属性', component: _css3Add2.default }, { path: '/web-html5-meta', name: 'html5-meta', component: _html5Meta2.default }, { path: '/web-html5-video-audio', name: 'html5-video-audio', component: _html5VideoAudio2.default }, { path: '/web-html5-location', name: 'html5-地理定位', component: _html5Location2.default }, { path: '/web-html5-web-works', name: 'html5-web-works', component: _html5WebWorks2.default }, { path: '/web-html5-websocket', name: 'html5-websocket', component: _html5Websocket2.default }, { path: '/web-webpack-info', name: 'webpack服务器小结', component: _webpackInfo2.default }, { path: '/web-dev-ftl-node', name: 'ftl-node服务器', component: _devFtlNode2.default }, { path: '/web-dev-weinre', name: 'weinre服务器使用', component: _devWeinre2.default }, { path: '/web-dev-browsersync', name: 'Browsersync多端远程调试', component: _devBrowsersync2.default }, { path: '*', name: 'error', component: _error2.default }]
 });
 // 开发调试相关

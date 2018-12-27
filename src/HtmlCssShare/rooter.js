@@ -49,7 +49,7 @@ const router = new VueRouter({
   mode: 'history',
   linkActiveClass: 'active',
   // 路由的基路径
-  base: '/web-share/demo1',
+  base: '/demo1',
   routes: [
     { path: '/', name: 'index', component: index },
     { path: '/web-fluid', name: '流式布局', component: fluid },
