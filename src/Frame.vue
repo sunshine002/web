@@ -7,7 +7,7 @@
           <span><router-link :to="{name:'index'}" tag="a">Vue-Demo</router-link></span>
           <span><router-link :to="{name:'demo1'}" tag="a">html5-meta</router-link></span>
         </div>
-        <div class="tip">| 主要用来展示分享的demo，基于webpack(^3.7.1)，vue(^2.0.3)及vue-router(^2.0.1)来构建 v1</div>
+        <div class="tip">| 主要用来展示分享的demo，基于webpack(^3.7.1)，vue(^2.0.3)及vue-router(^2.0.1)来构建</div>
       </div>
     </div>
     <div class="app-content">

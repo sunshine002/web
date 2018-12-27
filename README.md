@@ -21,12 +21,18 @@
 
   - 对于非hash模式的路由，例history模式,可解决，刷新前端生成的路由时重定向跳转到 /web-share
 
-  - 注意webpack的output中的publickPath需设置为'/'，此站点会有一个二级域名对应的route应用，根据url中有web-share内容时加载二级域名对应的router构成的应用，如果publickPath不配的话会用默认值''，导致访问此二级域名找不到对应的main.js文件。具体查看https://www.webpackjs.com/configuration/output/#output-publicpath
+  - 注意webpack的output中的publickPath的设置
+    - 项目中如果有二级目录或多级目录时，需设置为'/'，项目中每一级目录都可正常访问；
+    - 当只有一级目录时，在项目中publickPath为'/'或''都ok
+    - 但编译后的文件放到Github Pages中时二级目录下的main.js路径是相对于Github Pages的根目录而非Github Pages(https://sunshine002.github.io/web-share/)目录下的（Github Pages的问题）,故publickPath只能设为相对目录，即：publickPath:''，也是默认值
+
 
     ```
     output: {
         path: path.join(__dirname, './docs'),
         filename: '[name].js',
-        publicPath: '/'
+        publicPath: ''
       },
     ```
+    - 介于上述问题，之前项目根据加载不同的url链接来加载不同的路由与组件模式，调为了单路由模式
+    - 以上问题主要是配合Github Pages的应用，项目中任何方式来实现都ok
