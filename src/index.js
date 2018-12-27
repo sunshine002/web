@@ -23,11 +23,11 @@ import Frame from './Frame.vue';
  * vue模块
  */
 // 路由配置
-import VueShareRouter from './VueShare/rooter.js';
-import HtmlCssShareRooter from './HtmlCssShare/rooter.js';
+import router from './router.js';
+// import HtmlCssShareRooter from './HtmlCssShare/rooter.js';
 
 // github pages的的web端demo的router的url中带有web-share
-let isWeb = window.location.pathname.indexOf('demo1') !== -1;
+// let isWeb = window.location.pathname.indexOf('demo1') !== -1;
 
 let data = {
   a: 1,
@@ -40,7 +40,7 @@ const vm = new Vue({
   el: '#app',
   // el: document.getElementById('app'),
   // 通过router配置参数注入路由
-  router: isWeb ? HtmlCssShareRooter : VueShareRouter,
+  router,
 
   // data
   data: data,
