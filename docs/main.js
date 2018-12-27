@@ -33435,7 +33435,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("html5-meta")])], 1)]), _c('div', {
     staticClass: "tip"
-  }, [_vm._v("| 主要用来展示分享的demo，基于webpack(^3.7.1)，vue(^2.0.3)及vue-router(^2.0.1)来构建")])])]), _c('div', {
+  }, [_vm._v("| 主要用来展示分享的demo，基于webpack(^3.7.1)，vue(^2.0.3)及vue-router(^2.0.1)来构建 v1")])])]), _c('div', {
     staticClass: "app-content"
   }, [_c('router-view')], 1)])
 },staticRenderFns: []}
