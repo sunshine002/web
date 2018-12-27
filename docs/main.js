@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 70);
@@ -33499,7 +33499,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // 引入 vue-router 组件：
 var router = new _vueRouter2.default({
-  // mode: 'history',
+  mode: 'history',
   linkActiveClass: 'active',
   routes: [
   // 根目录也指向index，原则上编译后的文件用于Github pages，默认根目录会是web-share
