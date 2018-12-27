@@ -14,7 +14,7 @@ import Vm133 from './pages/vm1-33';
 import error from '../error.vue';
 
 const router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',
   linkActiveClass: 'active',
   routes: [
     // 根目录也指向index，原则上编译后的文件用于Github pages，默认根目录会是web-share
