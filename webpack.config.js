@@ -12,7 +12,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, './docs'),
     filename: '[name].js',
-    publicPath: '/'
+    publicPath: ''
   },
   // import时可以省略的文件后缀名
   resolve: {
