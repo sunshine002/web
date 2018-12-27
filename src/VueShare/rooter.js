@@ -16,15 +16,14 @@ import error from '../error.vue';
 const router = new VueRouter({
   mode: 'history',
   linkActiveClass: 'active',
+  base: '/web-share/',
   routes: [
-    // 根目录也指向index，原则上编译后的文件用于Github pages，默认根目录会是web-share
     { path: '/', name: 'index', component: index },
-    { path: '/web-share', name: 'index', component: index },
-    { path: '/web-share/0', name: 'Vue起步', component: Vm0 },
-    { path: '/web-share/1-1', name: '实例-数据', component: Vm1 },
-    { path: '/web-share/1-2', name: 'DOM', component: Vm2 },
-    { path: '/web-share/1-3', name: '临界情况', component: Vm13 },
-    { path: '/web-share/1-33', name: '特性', component: Vm133},
+    { path: '/0', name: 'Vue起步', component: Vm0 },
+    { path: '/1-1', name: '实例-数据', component: Vm1 },
+    { path: '/1-2', name: 'DOM', component: Vm2 },
+    { path: '/1-3', name: '临界情况', component: Vm13 },
+    { path: '/1-33', name: '特性', component: Vm133},
     { path: '*', name: 'error', component: error }
   ]
 });
