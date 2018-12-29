@@ -12,6 +12,11 @@ module.exports = {
   output: {
     path: path.join(__dirname, './docs'),
     filename: '[name].js',
+    /**
+     * 注：之所以用相对目录，是因为github pages中只能是相对路径，否则资源不是相对于github pages目录下的，而是根目录下的，资源会找不到
+     * 另：如果在项目中路由切换成二级或三级时，直接刷新页面资源会找不到，原因是此处没有设成/，
+     * 若想实现刷新时，无论是开发环境还是生产环境，都应该设成/，目前为了配置github pages只能通过路由进行跳转
+     */
     publicPath: ''
   },
   // import时可以省略的文件后缀名

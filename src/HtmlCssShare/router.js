@@ -40,8 +40,6 @@ import devFtlNode from './pages/dev-ftl-node';
 import devWeinre from './pages/dev-weinre';
 import devBrowsersync from './pages/dev-browsersync';
 
-import error from '../error.vue';
-
 export default [
   { path: '/demo1', name: 'demo1', component: index },
   { path: '/web-fluid', name: '流式布局', component: fluid },
@@ -75,6 +73,5 @@ export default [
   { path: '/web-webpack-info', name: 'webpack服务器小结', component: webpackInfo },
   { path: '/web-dev-ftl-node', name: 'ftl-node服务器', component: devFtlNode },
   { path: '/web-dev-weinre', name: 'weinre服务器使用', component: devWeinre },
-  { path: '/web-dev-browsersync', name: 'Browsersync多端远程调试', component: devBrowsersync },
-  { path: '*', name: 'error', component: error }
+  { path: '/web-dev-browsersync', name: 'Browsersync多端远程调试', component: devBrowsersync }
 ];

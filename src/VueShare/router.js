@@ -16,6 +16,5 @@ export default [
   { path: '/1-1', name: '实例-数据', component: Vm1 },
   { path: '/1-2', name: 'DOM', component: Vm2 },
   { path: '/1-3', name: '临界情况', component: Vm13 },
-  { path: '/1-33', name: '特性', component: Vm133},
-  { path: '*', name: 'error', component: error }
+  { path: '/1-33', name: '特性', component: Vm133}
 ];

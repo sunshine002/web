@@ -2,6 +2,7 @@
     <div>
 <pre style="font-size:16px;line-height: 30px;">
 <b>webpack 构建工具使用总结：</b>
+2017年11月总结：
 Webpack 是一个模块打包器。它将根据模块的依赖关系进行静态分析，然后将这些模块按照指定的规则生成对应的静态资源；
 <a href="https://webpack.github.io/docs/configuration.html">详情点击查看官方文档</a>
 
@@ -66,14 +67,14 @@ devServer : {
 }
 此时访问：http://127.0.0.1:3334/api/user/list 相当于 访问了 http://127.0.0.1:3334/user/list
 
-     
+
 5 启动服务常见错：
 1）如引用含有字体图标的样式，一定要添加file-loader，否则会报错不能正常引用相关样式；
 2）npm或node.js版本低也会报错，此时要进行升级并重新安装node-moudle下的包；
 3）npm install vue时，默认安装的是vue2.0，vue2.0和1.0有不少的区别，要尽量做到兼容，如：vue-router2.0版本要对应vue2.0的版本，并且如果要正确解析template及render，webpack-config中要配置 alias 别名项。否则不能正确解析；
 4）http://localhost:8080/ 与 http://127.0.0.1:8080/都可以访问webpack服务，但把地址换成电脑的ip地址就不能访问了，需要输入命令：<b>启动服务器需要配下host</b> --host 10.134.90.131，主要用于手机上的调试；
 5）<b>如果把webpack安装在项目中，而不是全局中，调webpack命令的话只能在 package.json 文件的script中设置npm命令来调用，不能直接运行 webpack；</b>
-            
+
 6 npm 命令说明：
 1）npm install webpack --save-dev：在项目中安装并将依赖写在package.json文件中；
 2）webpack-dev-server --port 3000(将端口号改为3000)

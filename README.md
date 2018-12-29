@@ -16,23 +16,19 @@
 - 疑难问题解决方案
   - https://github.com/neal1991/articles-translator/blob/master/Github%20Pages%E4%BB%A5%E5%8F%8A%E5%8D%95%E9%A1%B5%E9%9D%A2%E5%BA%94%E7%94%A8.md
 
-- docs/404.html
-  - Github Pages对应的路由不存在时会到404html,里面可添加一个重定向的跳转，跳到github pages的根目录下，此项目即 /web-share
+- Github Pages的进一步应用：
+1. 之前对于hash路由模式的单页面应用的项目，会打包到docs(github pages资源目录的一种)目录下，生成Github Pages页并可访问；
+2. 对于history模式，路由配置项base需要设为二级目录名
+- 项目中当只有一级目录时，在项目中publicPath为'/'或''都ok；但含有二级或多级目录时，需设置为'/'，以保证成功加载资源；
+- 若设为'/'，编译后的文件放到Github Pages中时二级目录下的main.js路径是相对于Github Pages的根目录而非Github Pages(https://sunshine002.github.io/web-share/)目录下的,故publicPath只能设为相对目录，即：publicPath:''，也是默认值
 
-  - 对于非hash模式的路由，例history模式,可解决，刷新前端生成的路由时重定向跳转到 /web-share
+- 介于上述问题，之前项目根据加载不同的url链接来加载不同的路由与组件模式，调为了单路由模式且启动时只有一级目录，以使Github Pages主页可用，存在的问题是：在多级路由的页中直接刷新会找不到资源，所以尽量只通过路由跳转来实现页面切换；
+- 在项目中添加404.html，可设置Github Pages中的404页重定向到项目首页
 
-  - 注意webpack的output中的publickPath的设置
-    - 项目中如果有二级目录或多级目录时，需设置为'/'，项目中每一级目录都可正常访问；
-    - 当只有一级目录时，在项目中publickPath为'/'或''都ok
-    - 但编译后的文件放到Github Pages中时二级目录下的main.js路径是相对于Github Pages的根目录而非Github Pages(https://sunshine002.github.io/web-share/)目录下的（Github Pages的问题）,故publickPath只能设为相对目录，即：publickPath:''，也是默认值
-
-
-    ```
-    output: {
-        path: path.join(__dirname, './docs'),
-        filename: '[name].js',
-        publicPath: ''
-      },
-    ```
-    - 介于上述问题，之前项目根据加载不同的url链接来加载不同的路由与组件模式，调为了单路由模式
-    - 以上问题主要是配合Github Pages的应用，项目中任何方式来实现都ok
+  ```
+  output: {
+      path: path.join(__dirname, './docs'),
+      filename: '[name].js',
+      publicPath: ''
+    },
+  ```

@@ -33477,12 +33477,12 @@ var router = new _vueRouter2.default({
    * 则地址会是https://sunshine002.github.io，而不是https://sunshine002.github.io/web-share
    */
   base: '/web-share/',
-  routes: [{ path: '/',
+  routes: [{ path: '',
     name: 'index',
     component: _index2.default,
     children: __webpack_require__(180).default
   }, {
-    path: '/demo1',
+    path: 'demo1',
     name: 'demo1',
     component: _index4.default,
     children: __webpack_require__(212).default
